@@ -1,0 +1,202 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siri's Game Downloader</title>
+    <link rel="icon" href="https://www.apple.com/v/siri/h/images/overview/routers_tile_1__gds6mleh3lea_large.png" type="image/png">
+    <style>
+        /* Use Apple's system font */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style for the main container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        /* Style for the heading */
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #007aff; /* Apple's blue color */
+        }
+
+        /* Style for the paragraph */
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Style for the Siri icon */
+        .siri-icon {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: auto;
+        }
+
+        /* Style for the filter buttons */
+        .filters {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .filters button {
+            background-color: #007aff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .filters button:hover {
+            background-color: #005bb5;
+        }
+
+        .filters button.active {
+            background-color: #005bb5;
+        }
+
+        /* Style for the games list */
+        .game-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .game-list li {
+            margin: 15px 0;
+            font-size: 1.1em;
+        }
+
+        .game-list a {
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        .game-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style for the footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #555;
+            font-size: 1em;
+            border-top: 1px solid #eaeaea;
+        }
+
+        footer a {
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Small screen adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+
+            .game-list li {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Siri Icon -->
+        <img src="https://www.apple.com/v/siri/h/images/overview/routers_tile_1__gds6mleh3lea_large.png" alt="Siri Icon" class="siri-icon">
+        
+        <h1>Welcome to Siri's Game Downloader</h1>
+        <p>Some games here are made by Apple. To run these games, you need to use Apple's Shortcuts app. Explore the selection below and have fun!</p>
+
+        <!-- Filters -->
+        <div class="filters">
+            <button onclick="filterGames('all')" class="active">All Games</button>
+            <button onclick="filterGames('apple')">Apple’s Games</button>
+            <button onclick="filterGames('ns493')">NS493’s Games</button>
+        </div>
+
+        <!-- Games List -->
+        <ul class="game-list">
+            <!-- Apple's Games -->
+            <li class="game apple"><a href="https://www.icloud.com/shortcuts/e54b5384eaa64681bbc38a9eb1f4ef79" target="_blank">Haiku Generator</a></li>
+            <li class="game apple"><a href="https://www.icloud.com/shortcuts/f28391bb8e924d129845aed8e0e1d7fb" target="_blank">True or False Game</a></li>
+            <li class="game apple"><a href="https://www.icloud.com/shortcuts/97c9382e356548dca17e5bf8f9c8fcbc" target="_blank">Music Quiz</a></li>
+
+            <!-- NS493’s Games -->
+            <li class="game ns493"><a href="https://www.icloud.com/shortcuts/8b7028c949a6474b926e8835160ee8fa" target="_blank">Text to Speech</a></li>
+            <li class="game ns493"><a href="https://www.icloud.com/shortcuts/bbae20aa240b480ab252991bd1a08e74" target="_blank">Talk Simulator</a></li>
+            <li class="game ns493"><a href="https://www.icloud.com/shortcuts/7f57e71e30a94038aa252c43ccb32cf3" target="_blank">Sonic Game (Worst Game Ever)</a></li>
+            <li class="game ns493"><a href="https://www.icloud.com/shortcuts/50c815d4bf784b38a855f73d0abca185" target="_blank">Draw Logo With Text</a></li>
+            <li class="game ns493"><a href="https://www.icloud.com/shortcuts/20102e10b9084c05a5645b1274e41bfe" target="_blank">Translator</a></li>
+            <li class="game ns493"><a href="https://www.icloud.com/shortcuts/19c7d35b38bd4e73a01fea2b83b4d1bc" target="_blank">Meme Maker</a></li>
+        </ul>
+    </div>
+
+    <!-- Footer with updated content and link -->
+    <footer>
+        Siri’s Game Downloader is by <a href="https://bio.link/noahscratch493" target="_blank">NS493</a><br>
+        <a href="https://forms.gle/EVzwcmgKYfid6GnG9" target="_blank">Suggest a Game</a>
+    </footer>
+
+    <script>
+        function filterGames(category) {
+            var games = document.querySelectorAll('.game');
+            var buttons = document.querySelectorAll('.filters button');
+            
+            // Remove 'active' class from all buttons
+            buttons.forEach(function(button) {
+                button.classList.remove('active');
+            });
+
+            // Add 'active' class to the clicked button
+            event.target.classList.add('active');
+
+            // Show/Hide games based on the selected category
+            games.forEach(function(game) {
+                if (category === 'all') {
+                    game.style.display = 'block';
+                } else if (game.classList.contains(category)) {
+                    game.style.display = 'block';
+                } else {
+                    game.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
