@@ -32,9 +32,9 @@ You can view the live version of Siri's Game Downloader on GitHub Pages:
 
 ## Suggest a Game
 
-Have a game or Shortcut you'd like to suggest? Fill out the form here:
+You cannot add games anymore...
 
-[Suggest a Game](https://forms.gle/EVzwcmgKYfid6GnG9)
+
 
 # License
 This project is not licensed. Please feel free to use and modify it as needed.
