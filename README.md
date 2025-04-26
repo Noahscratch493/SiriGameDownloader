@@ -40,4 +40,4 @@ You cannot add games anymore...
 This project is not licensed. Please feel free to use and modify it as needed.
 
 # Footer
-Siri’s Game Downloader is created and maintained by Noahscratch493. Feel free to reach out for any questions or feedback!
+Siri’s Game Downloader is created and maintained by Noahscratch493.
