@@ -41,6 +41,3 @@ This project is not licensed. Please feel free to use and modify it as needed.
 
 # Footer
 Siri’s Game Downloader is created and maintained by Noahscratch493.
-
-##
-### This site was made using [ChatGPT](https://chatgpt.com)
